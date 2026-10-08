@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.app {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+
+/* Main Heading */
+
+h1 {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: black;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 55px;
+  color: black;
+}
+
+
+/* Table */
+
+.table-container {
+  width: 95%;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th {
+  background-color: #237dcc;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  padding: 20px;
+}
+
+td {
+  font-size: 24px;
+  padding: 17px;
+  border: 1px solid #b8d5eb;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #dceeff;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+
+/* Delete Button */
+
+.delete-btn {
+  background-color: #237dcc;
+  color: white;
+  border: none;
+  padding: 13px 25px;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #1768ad;
+}
+
+
+/* Add Todolist Button */
+
+.add-todo-button {
+  margin-top: 50px;
+  background-color: #237dcc;
+  color: white;
+  border: none;
+  padding: 15px 28px;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-todo-button:hover {
+  background-color: #1768ad;
+}
+
+
+/* Background behind popup */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Popup */
+
+.add-todo-modal {
+  background-color: white;
+
+  width: 450px;
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+  text-align: left;
+}
+
+
+/* Popup Heading */
+
+.add-todo-modal h2 {
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-size: 28px;
+}
+
+
+/* Label */
+
+.add-todo-modal label {
+  display: block;
+
+  font-size: 18px;
+
+  margin-bottom: 8px;
+}
+
+
+/* Input */
+
+.add-todo-modal input {
+  width: 100%;
+
+  padding: 13px;
+
+  font-size: 18px;
+
+  border: 1px solid #aaa;
+
+  border-radius: 5px;
+
+  margin-bottom: 25px;
+}
+
+
+/* Form buttons */
+
+.form-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+}
+
+
+/* Submit */
+
+.submit-btn {
+  background-color: #237dcc;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 22px;
+
+  font-size: 18px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+
+/* Cancel */
+
+.cancel-btn {
+  background-color: #777;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 22px;
+
+  font-size: 18px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #1768ad;
+}
+
+.cancel-btn:hover {
+  background-color: #555;
+}
